@@ -1,0 +1,94 @@
+body {
+	background-color: #1B1714!important;
+}
+
+header {
+	height: 680px;
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+.title{
+	position: relative;
+	top: -30px;
+}
+
+
+.bg {
+	margin-top: 3px;
+	background-color: #AB281E;
+}
+
+#container {
+	position: relative;
+	top: -30px;
+}
+
+.results{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+.card-img-top {
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card {
+	margin: 10px 0 10px 0;
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+    border-radius: 30px 30px 0px 0px;
+    transition: 0.2s;	
+    color: black;
+}
+
+.card:hover {
+	box-shadow: 8px 8px 0 0 rgba(0,0,0,0.2);
+}
+
+span.poster {
+	height: 375px;
+	background-size: cover;
+	display: block;
+}
+
+span.info {
+	text-align: center;
+	float: left;
+}
+
+.scroll-up {
+	position: fixed;
+	z-index: 999;
+	bottom: 1.8em;
+	right: 1.8em;
+}
+
+.scroll-up a {
+	background-color: #AB281E;
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+	background-color: rgba(235, 235, 235, .8);
+	color: #222;
+}
+
+.footer-wrapper {
+    background: #000000;
+    padding: 36px 0;
+    color: #fff;  
+}
+
+.copyright p {
+    margin: 0;
+}
