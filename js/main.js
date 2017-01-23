@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$(".movie").keyup(function(e){
 		if (e.keyCode == 13){
 			if ($(".movie").val().length > 0) {
-				api = `http://www.omdbapi.com/?s=${$(".movie").val()}&page=${count}&type=movie`;
+				api = `https://www.omdbapi.com/?s=${$(".movie").val()}&page=${count}&type=movie`;
 				$(".results").html("");
 				$.getJSON(api, function(j){
 					pages = j.totalResults;
@@ -50,7 +50,7 @@ function getFilm(poster, title, year, id) {
 $(window).scroll(function() {
 	if($(window).scrollTop() + $(window).height() == getDocHeight()) {
 		count++;
-		api = `http://www.omdbapi.com/?s=${$(".movie").val()}&page=${count}&type=movie`;
+		api = `https://www.omdbapi.com/?s=${$(".movie").val()}&page=${count}&type=movie`;
 		if(count<=(Math.ceil(pages/10))){
 			console.log(count);
 			$.getJSON(api,function (j){
@@ -76,12 +76,3 @@ function focusOnA() {
 	form.style.display = '';
 	form.scrollIntoView();
 };
-
-/*
-1.- crear 3 componentes
-	-> ng cli
-		->ng generate component menuSupperior
-2.-Añadir mis nuevos coponentes (tags..) a la aplicacion -> app.comp.html
-3.-Comp. menuSuperior -> añadir array a la clase
-4.-Enlazar en vista con ngFor
-*/
